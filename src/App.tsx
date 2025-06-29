@@ -3,8 +3,8 @@ import { ArrowUp, PanelLeft, Settings2 } from "lucide-react";
 const App = () => {
   return (
     <>
-      <div className="flex min-h-screen w-full">
-        <aside className="border-2">
+      <div className="bg-background flex min-h-screen w-full">
+        <aside className="bg-primary border-2">
           <div>
             <PanelLeft />
           </div>
