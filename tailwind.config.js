@@ -18,7 +18,8 @@ export default {
           foreground: "hsl(var(--secondary-foreground))"
         },
         "border": "hsl(var(--border))",
-        "chat-background": "hsl(var(--chat-background,270 16.13% 12.16%))"
+        "chat-border": "hsl(var(--chat-border),333.3 22% 16.1%)",
+        "chat-background": "hsl(var(--chat-background,270 16.13% 12.16%))",
       }
     },
   },
