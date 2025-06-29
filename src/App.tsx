@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { ArrowUp, PanelLeft, Settings2 } from "lucide-react";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <div className="flex min-h-screen w-full">
+        <aside className="border-2">
+          <div>
+            <PanelLeft />
+          </div>
+          <h2>T3.chat</h2>
+          <button>New Chat</button>
+          <input className="border-2" type="text" />
+        </aside>
 
-export default App
+        <main className="flex-1 border-2">
+          <div>
+            <div>
+              <h2 className="text-3xl">How can I help you </h2>
+            </div>
+
+            <button className="">new chat</button>
+            <div>
+              <Settings2 />
+            </div>
+
+            <div>
+              <ul>
+                <li>Create</li>
+                <li>Explore</li>
+                <li>Code</li>
+                <li>Learn</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <ul>
+              <li>How does AI Work?</li>
+              <li>Are black holes real</li>
+              <li>How many Rs are in the word "strawberry"</li>
+              <li>What is the meaning of life</li>
+            </ul>
+          </div>
+
+          <div>Make sure you agree to our Terms and our Privacy Policyk</div>
+
+          <div>
+            <div>Search bar</div>
+            <input type="text" />
+            <ArrowUp />
+          </div>
+        </main>
+      </div>
+    </>
+  );
+};
+
+export default App;
