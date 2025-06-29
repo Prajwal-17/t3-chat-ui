@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "hsl(var(--background))",
+        background: "hsl(var(--background,313.8 24.5% 10.4%))",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -16,7 +16,9 @@ export default {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))"
-        }
+        },
+        "border": "hsl(var(--border))",
+        "chat-background": "hsl(var(--chat-background,270 16.13% 12.16%))"
       }
     },
   },
